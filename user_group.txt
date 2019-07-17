@@ -1,0 +1,36 @@
+USER Management
+Using gui asks for stanadard or administrator > standard --> no root acces
+Administrator mean--> root acces
+
+CLI>>
+Add user #> sudo adduser harsh
+Sudo paasswd for # >******
+
+
+Switch #> su harsh
+Enter password #> ****
+
+Add user to sudoers file..
+#> sudo adduser harsh sudo
+
+
+Delete user #> sudo userdel harsh
+userdel
+
+Change user's password #> sudo passwd harsh
+Enter new password #> ******
+
+
+Add group #> sudo groupadd gname
+Delete group #> sudo groupdel gname
+Give ownership of file to that grp#>chown harsh:gname filename
+
+
+Adding user to a group #> sudo add user harsh1 gname
+Delete #> sudo deluser harsh1 gname
+
+ALL THE INFO ABOUT ALL USRS #>sudo cd /etc/passwd
+
+All the info about groups#> sudo cd/etc/group
+
+
