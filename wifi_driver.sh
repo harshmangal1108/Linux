@@ -4,9 +4,9 @@
 sudo apt-get install --reinstall make
 #OR
 #Run this command to install make and all the packages needed to build your code.
-sudo apt-get install build-essential
+#sudo apt-get install build-essential ##OPTIONAL
 #Please update your kernel to lates one
-sudo apt-get dist-upgrade
+#sudo apt-get dist-upgrade    ##OPTIONAL
 #In terminal enter 
 git clone https://github.com/lwfinger/rtlwifi_new.git    ###be Patient
 cd rtlwifi_new
