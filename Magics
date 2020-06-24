@@ -1,0 +1,2 @@
+## create directories mutliple
+mkdir hello{1..50}
