@@ -1,0 +1,16 @@
+80	 which date 
+81	 $PATH
+82	 echo $PATH
+83	 $SHELL
+84	 exit
+85	 $PATH
+86	 cp /usr/bin/date /home/harsh/
+87	 cat date 
+88	 mv /usr/bin/date /home/harsh/Downloads/
+89	 sudo mv /usr/bin/date /home/harsh/Downloads/
+90	 date
+91	 PATH=/home/harsh/date:/home/harsh/Downloads/
+92	 date
+93	 PATH=$PATH:/home/harsh/Downloads/
+94	 date
+95	 fc -l
