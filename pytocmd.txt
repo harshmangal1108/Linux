@@ -1,0 +1,16 @@
+29	   
+30	 exit
+31	 vim /usr/bin/delvex 
+32	 cat /usr/bin/delvex 
+33	 delvex 
+34	 echo $USER
+35	 python3
+36	 vim hello.py
+37	 python3 hello
+38	 python3 hello.py 
+39	 chmod +x hello.py 
+40	 ./hello.py 
+41	 vim /usr/bin/helloo
+42	 chmod +x /usr/bin/helloo 
+43	 helloo 
+44	 fc -l
