@@ -1,0 +1,951 @@
+    1  passwd root
+    2  cd
+    3  exit
+    4  yum install python3-pip -y
+    5  pip --version
+    6  pip
+    7  pip3 --version
+    8  pip3 install jupyter
+    9  jupyter-notebook
+   10  jupyter
+   11  jupyter --version
+   12  pip3 install jupyter
+   13  jupyter notebook
+   14  ls
+   15  jupyter notebook
+   16   ~/.local/bin/jupyter-notebook
+   17  .local/bin/jupyter-notebook
+   18  ./.local/bin/jupyter-notebook
+   19  pip3 uninstall jupyter
+   20  pip3 install jupyter
+   21  which jupyter
+   22  pip3 install jupyter-notebook
+   23  pip3 install notebook
+   24  python3 -m notebook
+   25  cd ..
+   26  exit
+   27  passwd root
+   28  useradd harsh
+   29  su harsh
+   30  passwd harsh
+   31  su harsh
+   32  dnf repolist
+   33  dnf repolist -v
+   34  dnf repolist -v | grep docker
+   35  dnf remove docker
+   36  dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+   37  dnf list docker-ce
+   38  dnf install docker-ce
+   39  dnf config-manager \ --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+   40  dnf install docker-ce docker-ce-cli 
+   41  dnf install docker-ce docker-ce-cli containerd.io
+   42  dnf install docker-ce docker-ce-cli containerd.io --nobest
+   43  yum list
+   44  yum list | grep docker
+   45  yum autoremove
+   46  sudo yum install docker-ce-3:18.09.1-3.el7
+   47  systemctl start docker
+   48  docker images
+   49  sudo yum install docker-ce-cli-1:19.03.8-3.el7  
+   50  docker run hello-world
+   51  docker images
+   52  docker ps
+   53  docker ps -a
+   54  docker pull python
+   55  docker images
+   56  docker run python
+   57  docker ps 
+   58  docker ps python
+   59  docker ps python3
+   60  docker ps -a
+   61  pwd
+   62  cat >hello.py
+   63  cat hello.py 
+   64  python3  hello.py 
+   65  ls
+   66  vim hello.py 
+   67  dnf instll vim -y
+   68  yum install vim -y
+   69  vim hello.py 
+   70  docker run python hello.py 
+   71  python3 hello.py 
+   72  vim hello.py 
+   73  python3 hello.py 
+   74  vim hello.py 
+   75  python3 hello.py 
+   76  vim hello.py 
+   77  python3 hello.py 
+   78  vim hello.py 
+   79  python3 hello.py 
+   80  vim DockerFile
+   81  pwd
+   82  shutdown
+   83  shutdown --help
+   84  shutdown -P
+   85  poweoff
+   86  poweroff
+   87  su -i
+   88  su harsh
+   89  yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+   90  cd /etc/yum.repos.d/
+   91  ls
+   92  cd
+   93  dnf
+   94  dnf install docker
+   95  docker
+   96  docker --version
+   97  ls
+   98  export DOCKER_HOST="tcp://52.204.127.145:2375"
+   99  docker version
+  100  docker info
+  101  docker run hello.py 
+  102  docker images
+  103  docker run ubuntu
+  104  docker ps
+  105  docker stop ubuntu
+  106  docker stop 9a6182db9278
+  107  docker search mongodb
+  108  docker images
+  109  history
+  110  poweroff
+  111  git clone https://github.com/harshmangal1108/dockerapp/tree/master
+  112  dnf install git
+  113  git clone https://github.com/harshmangal1108/dockerapp/tree/master
+  114  git clone https://github.com/harshmangal1108/dockerapp
+  115  ls
+  116  docker bulid -t harshpy:v1 https://github.com/harshmangal1108/dockerapp.git
+  117  history 
+  118  export DOCKER_HOST="tcp://52.204.127.145:2375"
+  119  docker info
+  120  ls
+  121  useradd dateuser
+  122  passwd dateuser
+  123  sudo chmod a-x /usr/bin/date 
+  124  date
+  125  setfacl -m u:dateuser:x /usr/bin/date
+  126  su dateuser
+  127  exit
+  128  setfacl -m u:dateuser:000 /*
+  129  setfacl -m u:dateuser:000 /
+  130  su dateuser
+  131  setfacl -m u:dateuser:r /
+  132  su dateuser
+  133  setfacl -m u:dateuser:rwx /bin/bash
+  134  su dateuser
+  135  setfacl -m u:dateuser:rwx /
+  136  su dateuser
+  137  setfacl -m u:dateuser:rwx /
+  138  setfacl -m u:dateuser:rwx /*
+  139  setfacl -m u:dateuser:rwx /
+  140  getfacl 
+  141  userdel A B dateuser
+  142  userdel -r A
+  143  userdel -r B
+  144  userdel -r dateuser
+  145  cd /home/
+  146  sl
+  147  ls
+  148  rm -rvf dateuser/
+  149  docker run hello-world
+  150  docker run -it --name myct1 alpine sh
+  151  docker rm myct1
+  152  docker run -it --name myct1 alpine sh
+  153  docker volume create hvol1
+  154  docker volume ls
+  155  docker run -it --name myct1 -v hvol1:/mydata   alpine sh
+  156  docker run -it --name myct2 -v hvol1:/mydata   alpine sh
+  157  docker rm myct2
+  158  docker run -it --name myct2 -v hvol1:/mydata   alpine sh
+  159  docker run -it --name myct3 -v hvol1:/harsh  java bash
+  160  history 
+  161  docker images
+  162  cd /var/lib/docker
+  163  ls
+  164  cd volumes/
+  165  ls
+  166  cd hvol1/
+  167  ls
+  168  cd _data
+  169  ls
+  170  cat abc 
+  171  mkdir abcd
+  172  ls
+  173  cd
+  174  docker run -it --name myct3 -v hvol1:/harsh  java bash
+  175  docker run -it --name myct4 -v hvol1:/harsh  java bash
+  176  docker ps 
+  177  docker images
+  178  history 
+  179  poweroff 
+  180   DOCKER_HOST="tcp://52.204.127.145:2375" 
+  181  docker info
+  182  DOCKER_HOST="tcp://52.204.127.145:2375" 
+  183  DOCKER_HOST="tcp://52.204.127.145:2375"
+  184  docker info
+  185  exit
+  186  export DOCKER_HOST="tcp://52.204.127.145:2375"
+  187  docker info'
+  188  /
+  189  \
+  190  docker info
+  191  docker images
+  192  docker build -t apline:harshmangal
+  193  docker run --it --name apline:harshmangalc1q1
+  194  docker run -it --name apline:harshc1q1
+  195  docker run -it --name apline:harshc1q1 alpine
+  196  question1
+  197  mkdir question1
+  198  cd question1/
+  199  ls
+  200  vim Dockerfile
+  201  docker build -t apline:harsh .
+  202  docker images
+  203  docker run -itd --name harshc1q1apline:harsh
+  204  docker run -it --name harshc1q1a-d :harsh
+  205  docker build -t alpine:harsh .
+  206  docker run -itd --name harshc1q1 alpine:harsh
+  207  ls
+  208  vim Dockerfile
+  209  docker build -t alpine:harsh .
+  210  docker run -itd --name harshc1q1 alpine:harsh
+  211  docker rm harshc1q1
+  212  docker run -itd --name harshc1q1 alpine:harsh
+  213  ls
+  214  cd
+  215  ls
+  216  cd question1/
+  217  ls
+  218  cd /var/lib/docker
+  219  ;s
+  220  ls
+  221  cd container
+  222  cd containers/
+  223  ls
+  224  cd
+  225  ls
+  226  cd /var/lib/docker
+  227  ls
+  228  cd runtimes/
+  229  ;ls
+  230  ls
+  231  cd
+  232  docker run -itd --name harshc1q1 alpine:harsh bash
+  233  docker rm harshc1q1
+  234  docker run -itd --name harshc1q1 alpine:harsh bash
+  235  systemctl restart docker
+  236  mkdir day9
+  237  cd day9/
+  238  ls
+  239  dnf 
+  240  ls
+  241  pwd
+  242  git clone https://github.com/microsoft/project-html-website
+  243  git clone https://github.com/mdn/beginner-html-site-styled
+  244  mv beginner-html-site-styled/ webapp1
+  245  mv project-html-website/ webapp2
+  246  ls
+  247  vim Dockerfile
+  248  vim startweb.sh
+  249  vim Dockerfile
+  250  ls
+  251  cat >.dockerignore
+  252  cat .dockerignore
+  253  cat >.dockerignore
+  254  cat .dockerignore
+  255  cat >.dockerignore
+  256  cat .dockerignore
+  257   ls
+  258  ls a
+  259  ls -a
+  260  docker build -t covidweb:v1 .
+  261  docker images
+  262  cd /
+  263  ls
+  264  cd ..
+  265  cd
+  266  cd day9/
+  267  ls
+  268  docker run -itd --name test1 -p 9001:80 covidweb:v1
+  269  ifconfig
+  270  docker pos
+  271  docker ps
+  272  docker inspect | grep -i address
+  273  docker inspect 6600992bf277 | grep -i address
+  274  docker ps
+  275  docker rm 6600992bf277
+  276  docker rm 6600992bf277 --force
+  277  docker run -itd --name test1 -p 9001:80 covidweb:v
+  278  dock
+  279  docker exec -it test1 env
+  280  ip a
+  281  docker run -itd --name t2 -p 56546:80 -e x=webapp2  covidweb:v1
+  282  docker exec -it t2 env
+  283  free -m
+  284  df -h
+  285  fdisk -l
+  286  cd
+  287  git clone https://github.com/harshmangal1108/docker
+  288  mv day9 Day9
+  289  mv Day9/ docker
+  290  cd docker
+  291  ls
+  292  cd Day9/
+  293  ls
+  294  cd
+  295  cd docker
+  296  ls
+  297  git add Day9
+  298  cd Day9/
+  299  ls
+  300  ls -a
+  301  cd webapp
+  302  cd webapp1
+  303  ls -a
+  304  rm *.igt
+  305  rm *.git
+  306  ls -a
+  307  rm .git/
+  308  rm -rf  .git/
+  309  ls -a
+  310  cd ..
+  311  cd webapp2
+  312  rm -rf .git
+  313  cd ..
+  314  git add Day9/
+  315  git add Day9
+  316  git commit -m "2 images in single container "
+  317  git push origin master
+  318  history 
+  319  cd
+  320   cd docker
+  321  cd Day9/
+  322  vim Dockerfile 
+  323  cd
+  324  ls
+  325  cd javacode/
+  326  LS
+  327  Sl
+  328  ls
+  329  cd ..
+  330  cd docker
+  331  cd D
+  332  cd Day9/
+  333  ls
+  334  cd /root/javacode/
+  335  ls
+  336  cd
+  337  docker pe
+  338  docker ps
+  339  docker exec -it test1 sh
+  340  docker network ls
+  341  docker run -itd t2 --network host alpine sh
+  342  docker run -itd --name  t2 --network host alpine sh
+  343  docker run -itd --name  t1 --network host alpine sh
+  344  docker exec -itd t5 sh
+  345  docker exec -itd t1 sh
+  346  docker ps
+  347  docker exec -itd t1 sh
+  348  docker exec -it t1 sh
+  349  docker run --rm -it --network none alpine sh
+  350  poweroff 
+  351  dnf install httpd -y
+  352  cd /var/www/html/
+  353  ls
+  354  cp /home/ec2-user/ronaldo/ /var/www/html/
+  355  cp -r /home/ec2-user/ronaldo/ /var/www/html/
+  356  ls
+  357  cp -r /home/ec2-user/ronaldo/* /var/www/html/
+  358  ls
+  359  rm -rf ronaldo/
+  360  cd
+  361  s
+  362  ls
+  363  vi /etc/httpd/conf.
+  364  vi /etc/httpd/conf.d
+  365  vi /etc/httpd/conf/httpd.conf 
+  366  ls
+  367  cd /var/www/html/
+  368  ls
+  369  systemctl restart httpd
+  370  systemctl start httpd
+  371  systemctl start httpd.service
+  372  semanage port -a -t http_port_t -p tcp 8000
+  373  semanage port -a -t http_port_t -p tcp 56565
+  374  vim /etc/httpd/conf/httpd.conf 
+  375  systemctl start httpd.service
+  376  systemctl enable httpd.service
+  377  ls
+  378  cd prepros-6.config 
+  379  cd js
+  380  ls
+  381  cd
+  382  ls'
+  383  \
+  384  //
+  385  <<
+  386  \\
+  387  //
+  388  :
+  389  ;
+  390  cd /var/www/html/
+  391  cd js
+  392  ls
+  393  vi jquery-3.2.1.min.js 
+  394  ls
+  395  cd
+  396  4
+  397  poweroff 
+  398  docker compose
+  399  sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose
+  400  sudo chmod +x /usr/bin/docker-compose 
+  401  docker-compose
+  402  cd harsh1
+  403  docker-compose up -d harsh1
+  404  docker-compose up -d harsh11
+  405  cat docker-compose.yml 
+  406  docker-compose up -d harshct1
+  407  docker-compose up
+  408  docker-compose up  -d harshct1
+  409  vim docker-compose.yml 
+  410  docker-compose down
+  411  mv docker-compose.yml  harsh.yaml
+  412  docker-compose -f harsh.yaml up
+  413  cd
+  414  mkdir harsh2
+  415  cd harsh2/
+  416  vim docker-compose.yml
+  417  docker-compose up
+  418  docker-compose ps
+  419  docker-compose down
+  420  cd
+  421  mv harsh1  docker
+  422  ls
+  423  mv harsh docker
+  424  mv harsh2 docker
+  425  cd docker
+  426  git add .
+  427  git commit -m "Docker Compose"
+  428  ls
+  429  git push origin master
+  430  git push -f origin master
+  431  cd
+  432  history 
+  433  systemctl status docker
+  434  systemctl restart docker
+  435  systemctl enable docker
+  436  docker images
+  437  <<x
+  438     empty directory with unique name
+  439  mkdir harsh1
+  440  cd harsh1
+  441  vim docker-compose.yml
+  442  cat docker-compose.yml 
+  443  docker-compose up
+  444  vim docker-compose.yml
+  445  docker-compose up
+  446  vim docker-compose.yml
+  447  docker-compose up
+  448  docker-compose up -d
+  449  docker-compose ps
+  450  docker-compose images
+  451  docker-compose ps
+  452  docker-compose stop
+  453  docker-compose rm
+  454  docker-compose ps -a
+  455  docker-compose up -d
+  456  docker-compose down
+  457  vim docker-compose.yml 
+  458  docker-compose up -d
+  459  docker-compose ps
+  460  docker-compose kill
+  461  docker-compose ps
+  462  docker-compose down
+  463  ls
+  464   
+  465  systemctl status docker
+  466  git clone https://github.com/mdn/beginner-html-site-styled
+  467  mv beginner-html-site-styled/ web1
+  468  ls
+  469  vim Dockerfile
+  470  ls
+  471  mkdir harshapp
+  472  mv web1/ harshapp/
+  473  cd harshapp/
+  474  ls
+  475  cd web1/
+  476  la
+  477  ls
+  478  cd ..
+  479  vim Dockerfile
+  480  ls
+  481  vim docker-compose.ym;
+  482  vim docker-compose.yml
+  483  docker-compose up
+  484  docker images
+  485  docker-compose up
+  486  ls
+  487  docker-compose images
+  488  cd harshapp/
+  489  docker-compose images
+  490  docker-compose down
+  491  vim docker-compose.yml 
+  492  ls
+  493  cd harsh
+  494  cd harshapp/
+  495  ls
+  496  cd
+  497  mv harshapp/ docker
+  498  cd docker
+  499  ls
+  500  cd harshapp/
+  501  ls
+  502  touch runcmd.md
+  503  vim runcmd.md
+  504  cd
+  505  cd docker
+  506  git add harshapp/
+  507  git commit -m "Dockerfile + Compose"
+  508  git push -f orgin master
+  509  git push -f  master
+  510  git push 
+  511  ls
+  512  cd
+  513  rm -rf docker
+  514  ls
+  515  cd dockerapp/
+  516  ls
+  517  c
+  518  cd
+  519  cd harshcode/
+  520  ls
+  521  history 
+  522  vim harsh.dockerfile
+  523  vim docker-compose.yml
+  524  vim harsh.dockerfile
+  525  git clone https://github.com/microsoft/project-html-website
+  526  mv project-html-website/ web1
+  527  ls
+  528  vim docker-compose.yml 
+  529  docker rmi $(docker images -aq) --force
+  530  docker images
+  531  docker rm $(
+  532  docker rm $(docker ps -a)
+  533  docker ps -a
+  534  docker-compose up 
+  535  ls
+  536  vim docker-compose.yml 
+  537  vim harsh.dockerfile 
+  538  vim docker-compose.yml 
+  539  docker-compose up 
+  540  vim docker-compose.yml 
+  541  docker-compose up 
+  542  docker-compose up 
+  543  vim harsh.dockerfile 
+  544  systemctl restart docker
+  545  systemctl enable docker
+  546  docker-compose up 
+  547  vim docker-compose.yml 
+  548  docker-compose up 
+  549  docker-compose ps
+  550  docker-compose images
+  551  docker-compose dowm
+  552  docker-compose down
+  553  cd
+  554  git clone https://github.com/harshmangal1108/Docker
+  555  mv harshcode/ Docker
+  556  cd Docker
+  557  bc
+  558  cd Docker
+  559  ls
+  560  cd harshcode/
+  561  ls
+  562  cat > points.txt
+  563  cd
+  564  cd Docker
+  565  git add  harshcode/
+  566  cd dockerapp/
+  567  ls
+  568  ls -l
+  569  ls -a
+  570  cd ..
+  571  ls
+  572  rm *.git
+  573  rm /root/Docker/*.git
+  574  rm /root/Docker/dockerapp/*.git
+  575  cd dockerapp/
+  576  ls
+  577  ls -a
+  578  cd
+  579  cd Docker
+  580  ls
+  581  git add .
+  582  git add harshcode/
+  583  git commit -m"Dockerfile + Compose"
+  584  git push -f origin master
+  585  git add .
+  586  git commit 
+  587  dnf update
+  588  dnf upgrade 
+  589  cd Docker
+  590  cd harshcode/
+  591  ls
+  592  vi points.txt 
+  593  git add points.txt 
+  594  git commit -m "update description"
+  595  git push origin master
+  596  docker-compose ps
+  597  ls
+  598  vim docker-compose.yml 
+  599  docker-compose up
+  600  docker-compose network ls
+  601  vim docker-compose.yml 
+  602  cd Docker
+  603  ls
+  604  cd harshcode/
+  605  ls
+  606  cd ..
+  607  mv harshcode/ dockercompose_full
+  608  git add dockercompose_full/
+  609  git add dockercompose_full
+  610  git commit -m "Docker compose full"
+  611  git push -f origin master
+  612  cd dockercompose_full/
+  613  git add docker-compose.yml 
+  614  git commt -m "Docker compose"
+  615  git commit -m "Docker compose"
+  616  vim docker-compose.yml 
+  617  rm *.swp
+  618  ls -a
+  619  rm docker-compose.yml.swp
+  620  rm .docker-compose.yml.swp
+  621  git add docker-compose.yml 
+  622  git commit -m "Docker compose"
+  623  vim docker-compose.yml 
+  624  docker-compose up --build
+  625  docker-compose rm $(docker-compose ps -a)
+  626  docker-compose ps
+  627  docker-compose down
+  628  docker-compose up --build
+  629  vim docker-compose.yml 
+  630  docker-compose up --build
+  631  vim docker-compose.yml 
+  632  docker-compose up --build
+  633  docker ps
+  634  docker images
+  635  docker rmi $(docker images -aq) --force
+  636  docker images
+  637  docker rm $(docker ps -aq) --force
+  638  docker-compose up 
+  639  docker-compose ps
+  640  docker-compose start harshc1
+  641  docker-compose up -d
+  642  ifconfig 
+  643  docker-compose ps
+  644  docker-compose exec sh
+  645  docker-compose exec 
+  646  docker exec harshc1
+  647  docker exec harshc1 sh
+  648  docker ps
+  649  docker exec harshc1 alpine sh
+  650  docker inspect harshc1
+  651  git add docker-compose.yml 
+  652  git commit -m "Compose file with all things"
+  653  git push origin master
+  654  git add .
+  655  git push .
+  656  git push master
+  657  git push origin master
+  658  cd
+  659  mkdir history
+  660  cd history/
+  661  history >docker_history.txt
+  662  ls
+  663  vim docker_history.txt 
+  664  history 
+  665  history | tail -n 3
+  666  vim docker_history.txt 
+  667  fc -l 639 700
+  668  top
+  669  cd
+  670  docker ps 
+  671  docker rm harshcw
+  672  Docker/dockercompose_full/
+  673  cd Docker/dockercompose_full/
+  674  docker-compose down
+  675  cd
+  676  echo 1 >/proc/sys/vm/drop_caches 
+  677  d
+  678  docker pa
+  679  docker ps
+  680  docker log db
+  681  docker logs db
+  682  top
+  683  fdisk -l
+  684  df -hT
+  685  java
+  686  dnf install java
+  687  sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins.io/redhat/jenkins.repo
+  688  dnf install wget
+  689  sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins.io/redhat/jenkins.repo
+  690  sudo rpm --import http://pkg.jenkins.io/redhat-stable/jenkins.io.key
+  691  yum install jenkins
+  692  dnf clean packages
+  693  sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins.io/redhat-stable/jenkins.repo
+  694  sudo rpm --import http://pkg.jenkins.io/redhat-stable/jenkins.io.key
+  695  sudo yum install jenkins
+  696  java
+  697  java --version
+  698  java -version
+  699  java -V
+  700  sudo dnf remove java
+  701  java
+  702  dnf install java-11-openjdk-devel
+  703  sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins.io/redhat-stable/jenkins.repo
+  704  sudo rpm --import http://pkg.jenkins.io/redhat-stable/jenkins.io.key
+  705  sudo yum install jenkins
+  706  poweroff 
+  707  history
+  708  exit
+  709  df -hT
+  710  cd webjenkins/
+  711  cd
+  712  ls
+  713  cd we
+  714  cd webjenkins/
+  715  ls
+  716  cd webapp/
+  717  ls
+  718  vim index.html 
+  719  docker images
+  720  docker rmi dashboard
+  721  docker rmi dashboard:v1
+  722  docker rmi dashborad:v1
+  723  docker images
+  724  git status
+  725  git commit -m "Modified Index.html " -a
+  726  git push origin master
+  727  cd ..
+  728  vim Dockerfile 
+  729  git commit -m "Dockerfile modification" -a
+  730  git push origin master
+  731  docker imagee
+  732  vim webapp/index.html 
+  733  git commit -m "index.html update" -a
+  734  git push origin master
+  735  cd
+  736  docker ps
+  737  docker rm webc1
+  738  docker rm webc1 --force
+  739  vim webapp/index.html 
+  740  cd webjenkins/
+  741  vim webapp/index.html 
+  742  git commit -m "index.html chnage" -a
+  743  git push origin master
+  744  cd
+  745  cd webjenkins/
+  746  cd webapp/
+  747  ls
+  748  cd images/
+  749  ls
+  750  docker rm webc1 --force
+  751  docker stop webc1
+  752  docker rm webc1 --force
+  753  ls
+  754  systemctl restart jenkins
+  755  systemctl status jenkins
+  756  systemctl stop jenkins
+  757  systemctl restart jenkins
+  758  systemctl status docker
+  759  curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+  760  ls
+  761  sudo mv /usr/bin/
+  762  sudo mv minikube /usr/bin/
+  763  chmod +x /usr/bin/minikube 
+  764  minikube start --driver=docker
+  765  minikube start
+  766  docker ps
+  767  systemctl start docker
+  768  minikube start --driver=docker
+  769  exit
+  770  git clone https://github.com/harshmangal1108/Portfol
+  771  cd Portfolio/
+  772  ls
+  773  cd /var/www/html/
+  774  ls
+  775  rm -r *
+  776  rm -rf *
+  777  ls
+  778  mv  /root/Portfolio/* ./
+  779  ls
+  780  systemctl restart httpd
+  781  vim /etc/httpd/conf/httpd.conf | grep -i listen
+  782  cd /var/www/html/
+  783  ls
+  784  firefox index.html 
+  785  ls
+  786  cd ..
+  787  ls
+  788  cd html/
+  789  ls
+  790  systemctl start httpd
+  791  systemctl enable httpd
+  792  vim /etc/httpd/conf/httpd.conf 
+  793  mv -r * /var/www/
+  794  mv  * /var/www/
+  795  ls
+  796  cd ..
+  797  ls
+  798  service httpd restart
+  799  vim /etc/httpd/conf.d/welcome.conf 
+  800  reboot 
+  801  vim /etc/httpd/conf/httpd.conf 
+  802  service httpd restart
+  803  mkdir /tmp/ansib
+  804  cd /tmp/ansib/
+  805  vim a.dockerfile
+  806  docker build -t ansible:harsh -f a.dockerfile 
+  807  docker build -t ansible:harsh -f a.dockerfile .
+  808  vim a.dockerfile
+  809  docker build -t ansible:harsh -f a.dockerfile .
+  810  docker images
+  811  docker run -itd --name ansib ansible:harsh bash
+  812  docker exec -it ansib  bash
+  813  docker push harshdocker11/ansible:harsh harshdocker11
+  814  docker push ansible:harsh harshdocker11/ansible:harsh
+  815  docker tag ansible:harsh harshdocker11/ansible:harsh
+  816  docker push dockerharsh11/ansible:harsh
+  817  docker tag ansible:harsh harshdocker11/ansible:harsh
+  818  docker push harshdocker11/ansible:harsh
+  819  docker exec -it ansib  bash
+  820   vim install_ftp.yml
+  821  ansible-playbook -C install_ftp.yml 
+  822   vim install_ftp.yml
+  823  ansible-playbook -C install_ftp.yml 
+  824   vim install_ftp.yml
+  825  ansible-playbook -C install_ftp.yml 
+  826  ls
+  827  mv install_ftp.yml /etc/ansible/
+  828  vim jenkins.txt 
+  829  ls
+  830  cd /etc/ansible/
+  831  ls
+  832  docker exec -it ansib  bash
+  833  ls
+  834  cd /etc/
+  835  ls
+  836  cd /etc/ansible/
+  837  ls
+  838  cd
+  839  ls
+  840  history 
+  841  cd /tmp/ansib/s
+  842  cd /tmp/ansib/
+  843  s
+  844  ls
+  845  cat a.dockerfile 
+  846  cd ..
+  847  mv ansib/a.dockerfile /root/Devops2020/
+  848  ls
+  849  cd /root/Devops2020/
+  850  ls
+  851  mkdir 9may2020.md
+  852  cat a.dockerfile 
+  853  vim 9may2020.md/
+  854  vim 9may2020.md
+  855  rm 9may2020.md/
+  856  rmdir 9may2020.md
+  857  vim 9may2020
+  858  docker images
+  859  docker ps
+  860  exit
+  861  docker exec -it ansdoc bash
+  862  docker stop ansdoc
+  863  exit
+  864  docker ps
+  865  docker ps -a
+  866  docker start ansdoc
+  867  docker exec -it ansdoc
+  868  bash
+  869  exit
+  870  ls
+  871  cd /var/www/
+  872  ls
+  873  netstat -nltu
+  874  netstat -nl
+  875  ls
+  876  cd html/
+  877  ls
+  878  cd ..
+  879  mv -r assets html/
+  880  mv  assets html/
+  881  ls
+  882  mv about.html html/
+  883  mv services.html html/
+  884  mv index.html html/
+  885  ls
+  886  mv README.md html/
+  887  mv contact.html html/
+  888  ls
+  889  mv starter-license-W3Layouts.txt html/
+  890  cd html/
+  891  vim /etc/httpd/conf/httpd.conf 
+  892  systemctl restart httpd
+  893  ls
+  894  cat starter-license-W3Layouts.txt 
+  895  ls
+  896  vim index.html 
+  897  vim /etc/httpd/conf/httpd.conf 
+  898  systemctl restart httpd
+  899  vim /etc/httpd/conf/httpd.conf 
+  900  systemctl restart httpd
+  901  systemctl start httpd
+  902  vim /etc/httpd/conf/httpd.conf 
+  903  sudo kill -a httpd
+  904   systemctl status httpd
+  905  sudo httpd -t
+  906  cd
+  907  dnf install --reinstall httpd -y
+  908  dnf remove httpd -y
+  909  httpd
+  910  httpd -t
+  911  yum install httpd -y
+  912  cd /var/www/html/
+  913  ls
+  914  systemctl start httpd
+  915  ls
+  916  vim /etc/httpd/conf.d/welcome.conf
+  917  systemctl start httpd
+  918  systemctl restart httpd
+  919  cd
+  920  mkdir
+  921  cd Portfolio/
+  922  ls
+  923  mv /var/www/html/* ./
+  924  ls
+  925  cd ..
+  926  mkdir webapp
+  927  mv Portfolio webapp/
+  928  cd web
+  929  cd webapp/
+  930  ls
+  931   vim Dockerfile
+  932  docker build -t portfolio:v1 .
+  933  docker run -it --name portc1 -p 59956:80 portfolio:v1
+  934  docker run -it --name portc1 -p 5999956:80 portfolio:v1
+  935  docker run -it --name portc1 -p 59956:80 portfolio:v1
+  936  docker ps
+  937  docker run -it --name portct1 -p 59956:80 portfolio:v1
+  938  docker exec -it portct1
+  939  docker exec -it portct1 bash
+  940  docker start -it portct1 bash
+  941  docker start portct1
+  942  docker ps
+  943  docker ps
+  944  docker exec portct1 bash
+  945  docker exec -it portct1 bash
+  946  ls
+  947  cat history.txt 
+  948  ls
+  949  mv *.txt /home/ec2-user/history/
+  950  ls
+  951  history >/home/ec2-user/history/fullroot.txt

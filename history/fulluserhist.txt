@@ -1,0 +1,189 @@
+    1  jupyter-notebook 
+    2  jupyter-notebook list
+    3  jupyter notebook --no-browser --port=8888
+    4  jupyter notebook --ip=0.0.0.0 --port=80
+    5  jupyter notebook --ip=0.0.0.0 --port=8888
+    6  whoami
+    7  ifconfig 
+    8  ls
+    9  pwd
+   10  cat /etc/issue
+   11  cd /etc/yum.repos.d/
+   12  ls
+   13  python3
+   14  cd
+   15  python3
+   16  yum install python3
+   17  sudo yum install python3
+   18  dnf --help
+   19  python3 -V
+   20  python3
+   21  sudo -i
+   22  yum install python3-pip
+   23  sudo -i
+   24  jupyter
+   25  jupyter-notebook 
+   26  poweroff 
+   27  sudo poweroff 
+   28  whoami
+   29  pwd
+   30  useradd harsh
+   31  sudo useradd harsh
+   32  sudo -i
+   33  dnf reposlist
+   34  dnf repolist
+   35  dnf remove docker
+   36  sudo -i
+   37  ls
+   38  sudo -i
+   39  su harsh
+   40  ls /home/
+   41  sudo -i
+   42  docker images
+   43  sudo -i
+   44  docker 
+   45  docker --versionm
+   46  docker --version
+   47  docker run alpine
+   48  systemctl restart docker
+   49  systemctl start docker
+   50  sudo -i
+   51  history 
+   52  sudo -i
+   53  ls
+   54  sudo -i
+   55  mkdir A/{B/{D/{I,J},E/H},C/{F/H,G}
+   56  mkdir A/{B/{D/{I,J},E/H},C/{F/H,G}}
+   57  mkdir -p A/{B/{D/{I,[CJ},E/H},C/{F/H,G/K/L}}
+   58  tree A
+   59  Tree A
+   60  sudo dnf install tree
+   61  Tree A
+   62  tree A
+   63  mkdir -p  A/{B/{D/{I/M/Z,J/L/Z},E/H},C/{F/H/L,G/K/L/Z}}
+   64  tree A
+   65  mkdir -p  A/{B/{D/{I/M/Z,J/L/Z},E/H/L/Z},C/{F/H/L/Z,/G/K/L/Z}}
+   66  tree A
+   67  mkdir -p  A/{B/{D/{I/M/Z,J/L/Z},E/H/L/Z},C/{F/H/L/Z,/G/K/L/Z}}
+   68  tree A
+   69  sudo -i
+   70  date
+   71  sudo -i
+   72  sudo userdel dateuser
+   73  ls
+   74  rmdir A
+   75  useradd A,B
+   76  useraddA
+   77  useradd A
+   78  sudo useradd A
+   79  sudo useradd B
+   80  su A
+   81  sudo useradd A
+   82  sudo userdel A
+   83  sudo userdel B
+   84  sudo useradd A
+   85  cd /home/harsh/
+   86  cd /home/
+   87  ls
+   88  sudo rm -rf A/
+   89  sudo rm -rf B
+   90  ls
+   91  sudo useradd A
+   92  sudo passwd A
+   93  sudo userdel A
+   94  sudo userdel B
+   95  sudo userdel A
+   96  sudo useradd A
+   97  ls
+   98  cd A
+   99  sudo cd A
+  100  ls
+  101  pwd
+  102  sudo userdel -d A
+  103  sudo userdel -r A
+  104  sudo userdel -r B
+  105  sudo useradd A
+  106  passwd A
+  107  sudo passwd A
+  108  sudo passwd B
+  109  sudo useradd B
+  110  sudo passwd B
+  111  ls
+  112  sudo A
+  113  sudo cd A
+  114  ls
+  115  mkdir -p A/folder/file.txt
+  116  sudo mkdir -p A/folder/file.txt
+  117  cd ./A/
+  118  cd 
+  119  sudo -i
+  120  poweroff 
+  121  date
+  122  sudo chmod a+x /usr/bin/d
+  123  sudo chmod a+x /usr/bin/date 
+  124  date
+  125  /usr/bin/d
+  126  /usr/bin/date 
+  127  poweroff 
+  128  sudo poweroff 
+  129  ls
+  130  sudo -i
+  131  docker run hello-world
+  132  sudo -i
+  133  exit
+  134  sudo i
+  135  sudo -i
+  136  ls
+  137  exit
+  138  ls
+  139  docker status
+  140  systemctl status docker
+  141  sudo -i
+  142  ifconfig
+  143  docker ps
+  144  sudo -i
+  145  ifconfig
+  146  ls
+  147  cd ronaldo/
+  148  ls
+  149  cd
+  150  dnf install httpd -y
+  151  sudo - i
+  152  sudo -i
+  153  yes
+  154  sudo -i
+  155  poweroff 
+  156  sudo jupyter-notebook 
+  157  sudo sudo jupyter-notebook 
+  158  sudo poweroff 
+  159  logout
+  160  sudo -i
+  161  netstat | grep hhtp
+  162  netstat | grep http
+  163  netstat -l | grep http
+  164  systemctl  status httpd
+  165  vim /etc/httpd/conf/httpd.conf 
+  166  ifconfig
+  167  sudo 0i
+  168  sudo -i
+  169  /etc/init.d/jenkins start
+  170  sudo /etc/init.d/jenkins start
+  171  sudo -i
+  172  reboot 
+  173  sudo reboot 
+  174  sudo -i
+  175  minikube start --driver=docker
+  176  sudo -i
+  177  systemctl status httpd
+  178  sudo -i
+  179  exit
+  180  sudo -i
+  181  exit
+  182  sudo -i
+  183  sudo -i
+  184  ls
+  185  cd history/
+  186  ls
+  187  cd
+  188  ls
+  189  history >history/fulluserhist.txt

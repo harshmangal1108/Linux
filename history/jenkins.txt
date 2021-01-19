@@ -1,0 +1,1 @@
+docker run -itd --name jenkins1 -p 8080:8080 -v /var/jenkins_home ticketfly/jenkins-example-gradle-build

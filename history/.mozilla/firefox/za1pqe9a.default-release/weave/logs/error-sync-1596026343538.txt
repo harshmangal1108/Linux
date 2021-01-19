@@ -1,0 +1,65 @@
+1596026043629	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1596026123709	Sync.RemoteTabs	INFO	Generating tab list with filter
+1596026123709	Sync.RemoteTabs	DEBUG	Processing client: {"id":"QZ5YMn6F0gw0","type":"client","name":"hamam’s Firefox on DESKTOP-PGO0KF5","clientType":"desktop","lastModified":1595875812250,"tabs":[]}
+1596026123710	Sync.RemoteTabs	DEBUG	Processing client: {"id":"rz39JPH2OeuZ","type":"client","name":"harsh’s Firefox on linux","clientType":"desktop","lastModified":1594649032670,"tabs":[]}
+1596026123710	Sync.RemoteTabs	INFO	Final tab list has 2 clients with 0 tabs.
+1596026340513	Sync.SyncScheduler	DEBUG	Global Score threshold hit, triggering sync.
+1596026340515	Sync.Service	DEBUG	User-Agent: Firefox/78.0.2 (Linux x86_64) FxSync/1.80.0.20200709140757.desktop
+1596026340515	Sync.Service	INFO	Starting sync at 2020-07-29 18:09:00 in browser session ftHRlhEKW6Jj
+1596026340515	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1596026340517	Sync.Status	INFO	Resetting Status.
+1596026340517	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1596026340518	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1596026340518	FirefoxAccounts	DEBUG	getOAuthToken enter
+1596026340518	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1596026340518	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1596026340518	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1596026341928	Sync.Resource	DEBUG	GET success 200 https://sync-627-us-west-2.sync.services.mozilla.com/1.5/126131495/info/collections
+1596026341929	Sync.Service	DEBUG	Fetching server configuration: https://sync-627-us-west-2.sync.services.mozilla.com/1.5/126131495/info/configuration
+1596026341934	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1596026342530	Sync.Resource	DEBUG	GET success 200 https://sync-627-us-west-2.sync.services.mozilla.com/1.5/126131495/info/configuration
+1596026342531	Sync.Service	DEBUG	Fetching global metadata record
+1596026342531	Sync.Service	DEBUG	Weave Version: 1.80.0 Local Storage: 5 Remote Storage: 5
+1596026342531	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1596026342531	Sync.Service	INFO	Testing info/collections: {"passwords":1596026041.83,"addons":1595903808.29,"tabs":1596026042.29,"clients":1596025415.44,"crypto":1566141132.73,"forms":1596026042.7,"meta":1566141142.42,"bookmarks":1595904844.49,"prefs":1595903712.68,"history":1596026043.28}
+1596026342531	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 1566141132.73
+1596026342531	Sync.Synchronizer	DEBUG	Refreshing client list.
+1596026342533	Sync.Engine.Clients	INFO	0 outgoing items pre-reconciliation
+1596026342533	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1596026342537	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1596026343163	Sync.Collection	DEBUG	GET success 200 https://sync-627-us-west-2.sync.services.mozilla.com/1.5/126131495/storage/clients?full=1&limit=1000
+1596026343166	Sync.Engine.Clients	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 3 reconciled.
+1596026343167	Sync.Engine.Clients	DEBUG	Refreshing the known stale clients list
+1596026343167	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for undefined
+1596026343172	Sync.Synchronizer	INFO	Updating enabled engines: 3 clients.
+1596026343173	Sync.Synchronizer	INFO	Syncing all enabled engines.
+1596026343173	Sync.Engine.Prefs	INFO	0 outgoing items pre-reconciliation
+1596026343174	Sync.Engine.Prefs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1596026343175	Sync.Engine.Passwords	INFO	0 outgoing items pre-reconciliation
+1596026343175	Sync.Engine.Passwords	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1596026343176	Sync.Engine.Tabs	INFO	1 outgoing items pre-reconciliation
+1596026343177	Sync.Engine.Tabs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1596026343184	Sync.Engine.Tabs	INFO	Posting 1 records of 722 bytes with batch=true
+1596026343184	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1596026343184	Sync.Collection	DEBUG	POST Length: 722
+1596026343531	Sync.Collection	WARN	POST request to https://sync-627-us-west-2.sync.services.mozilla.com/1.5/126131495/storage/tabs?batch=true&commit=true failed: [Exception... "Abort"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "<unknown>"  data: no] No traceback available
+1596026343532	Sync.Status	DEBUG	Status for engine tabs: error.engine.reason.unknown_fail
+1596026343532	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed_partial
+1596026343532	Sync.ErrorHandler	DEBUG	tabs failed: [Exception... "Abort"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "<unknown>"  data: no] No traceback available
+1596026343534	Sync.Engine.Bookmarks.BookmarkSyncUtils	DEBUG	pushChanges: Processed change records: {"weak":0,"skipped":0,"updated":0}
+1596026343534	Sync.Status	DEBUG	Status for engine bookmarks: error.engine.reason.unknown_fail
+1596026343534	Sync.Status	DEBUG	Status.service: error.sync.failed_partial => error.sync.failed_partial
+1596026343534	Sync.ErrorHandler	DEBUG	bookmarks was interrupted due to the application shutting down
+1596026343535	Sync.Synchronizer	INFO	bookmarks was interrupted by shutdown; no other engines will sync
+1596026343535	Sync.Synchronizer	INFO	Aborting sync for failure in bookmarks
+1596026343535	Sync.Doctor	INFO	Skipping check of prefs - disabled via preferences
+1596026343535	Sync.Doctor	INFO	Skipping check of passwords - disabled via preferences
+1596026343535	Sync.Doctor	INFO	Skipping check of tabs - disabled via preferences
+1596026343535	Sync.Doctor	INFO	Skipping validation: no engines qualify
+1596026343535	Sync.Synchronizer	INFO	Sync completed at 2020-07-29 18:09:03 after 3.02 secs.
+1596026343535	Sync.Declined	DEBUG	Handling remote declined: []
+1596026343535	Sync.Declined	DEBUG	Handling local declined: []
+1596026343536	Sync.Declined	DEBUG	Declined changed? false
+1596026343536	Sync.Service	INFO	No change to declined engines. Not reuploading meta/global.
+1596026343536	Sync.ErrorHandler	ERROR	Some engines did not sync correctly.
+1596026343536	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
