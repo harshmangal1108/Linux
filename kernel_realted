@@ -1,0 +1,8 @@
+## HIDE GRUB MENU
+sudo grub2-editenv - set menu_auto_hide=1
+## Show GRUB Menu
+sudo grub2-editenv - unset menu_auto_hide
+
+
+## Change Kernel to a Particular Version
+grubby --set-default /boot/vmlinuz-5.10.19-200.fc33.x86_64 
